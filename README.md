@@ -1,19 +1,45 @@
 # CCTDecode
  Detect and decode the CCT (Circular Coded Target).
-The main function is listed as following:
+
+# Requirements:
+<1> python 3.7 (I don't know whether other python version would work correctly, you can have a try.)
+<2> opencv-python
+<3> pillow
+<4> numpy
+<5> matplotlib
+<6> progress
+<7> ... (maybe others, you can follow the error infomation to 'pip install xxx' them.)
+ 
+# The main function is listed as following:
 
 1. Draw CCT images: DrawCCT.py
-
-   which can draw CCT figures to .png format images. the function is CCT_table(12,2500), the args represent the bit number and image size (pixels).
+   usage: <1> cd root_path
+          <2> python DrawCCT.py --bit_n=9 
+                                --size=400   
 ![Image text](https://github.com/poxiao2/image-store/blob/master/cct14.png)
    
-2. Decode CCT: CCTDecodeRelease.py
-
+2. Detect and decode CCT: CCTDecodeRelease.py
    which can decode CCT from the signal image, or you can use it to decode the CCT images in the same folder.
-   the function is code_table,image=CCT_extract1(img,12,0.85), the args represent the input image, bit number and filter arg. and this function returns the code table and image whose CCT is marked.
+   usage: <1> cd root_path
+          <2>python CCTDecodeRelease.py --filename=cct12_6.png 
+                                        --bit_n=12 
+                                        --threshold=0.7   #for single image
+             python CCTDecodeRelease.py --bach=True 
+                                        --bit_n=8 
+                                        --save_folder=./result/ 
+                                        --threshold=0.93   #for images in same folder
 ![Image text](https://github.com/poxiao2/image-store/blob/master/cct12.jpg)
-   
-3. Decode CCT from video: DecodeCCTFromVideo.py
+(Actually, there are some args are default value which can be ignored if you follow my data construction. The whole args are listed as follows:
+   bach=False, # bach processing
+   bit_n=12,   # the bit number of CCT image
+   filename=None,  # image name
+   save_folder='./result/',  # the folder for saving the processed images
+   src_folder='./data/',  # the folder which contains the source images
+   threshold=0.8   # the threshold for CCT detecion, which is between 0 and 1.
+So, you can change this args as you whish. But remember to write it correctly.)
 
-   which can decode CCT from video directly. The function is CallCamera():
+3. Decode CCT from video: DecodeCCTFromVideo.py
+   usage: <1>cd root_path
+          <2>python DetectCCTFromVideo.py --bit_n=12 
+                                          --threshold=0.7      
 ![Image text](https://github.com/poxiao2/image-store/blob/master/20191219223602.png)
