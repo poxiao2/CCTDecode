@@ -21,11 +21,13 @@
 
 1. Draw CCT images: DrawCCT.py
 
-   usage: <1> cd root_path
+   usage: 
    
-          <2> python DrawCCT.py --bit_n=9 
-          
-                                --size=400   
+   <1> cd root_path
+   
+   <2> python DrawCCT.py --bit_n=9 
+   
+                         --size=400   
                                 
 ![Image text](https://github.com/poxiao2/image-store/blob/master/cct14.png)
    
@@ -33,21 +35,22 @@
 
    which can decode CCT from the signal image, or you can use it to decode the CCT images in the same folder.
    
-   usage: <1> cd root_path
+   usage: 
    
-          <2>python CCTDecodeRelease.py --filename=cct12_6.png 
+   <1> cd root_path
+   <2> python CCTDecodeRelease.py --filename=cct12_6.png 
           
-                                        --bit_n=12 
+                                  --bit_n=12 
                                         
-                                        --threshold=0.7   #for single image
+                                  --threshold=0.7   #for single image
                                         
-             python CCTDecodeRelease.py --bach=True 
+       python CCTDecodeRelease.py --bach=True 
              
-                                        --bit_n=8 
+                                  --bit_n=8 
                                         
-                                        --save_folder=./result/ 
+                                  --save_folder=./result/ 
                                         
-                                        --threshold=0.93   #for images in same folder
+                                  --threshold=0.93   #for images in same folder
                                         
 ![Image text](https://github.com/poxiao2/image-store/blob/master/cct12.jpg)
 
@@ -69,10 +72,12 @@ So, you can change this args as you whish. But remember to write it correctly.)
 
 3. Decode CCT from video: DecodeCCTFromVideo.py
 
-   usage: <1>cd root_path
+   usage: 
    
-          <2>python DetectCCTFromVideo.py --bit_n=12 
+   <1> cd root_path
+   
+   <2> python DetectCCTFromVideo.py --bit_n=12 
           
-                                          --threshold=0.7      
+                                    --threshold=0.7      
                                           
 ![Image text](https://github.com/poxiao2/image-store/blob/master/20191219223602.png)
