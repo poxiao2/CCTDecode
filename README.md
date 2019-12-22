@@ -25,9 +25,7 @@
    
    <1> cd root_path
    
-   <2> python DrawCCT.py --bit_n=9 
-   
-                         --size=400   
+   <2> python DrawCCT.py --bit_n=9 --size=400   
                                 
 ![Image text](https://github.com/poxiao2/image-store/blob/master/cct14.png)
    
@@ -38,6 +36,7 @@
    usage: 
    
    <1> cd root_path
+   
    <2> python CCTDecodeRelease.py --filename=cct12_6.png 
           
                                   --bit_n=12 
@@ -76,8 +75,6 @@ So, you can change this args as you whish. But remember to write it correctly.)
    
    <1> cd root_path
    
-   <2> python DetectCCTFromVideo.py --bit_n=12 
-          
-                                    --threshold=0.7      
+   <2> python DetectCCTFromVideo.py --bit_n=12 --threshold=0.7      
                                           
 ![Image text](https://github.com/poxiao2/image-store/blob/master/20191219223602.png)
