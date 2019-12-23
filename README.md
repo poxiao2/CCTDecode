@@ -1,9 +1,11 @@
-CCTDecode <br>
-=============== <br>
+CCTDecode 
+=============== 
+
  Detect and decode the CCT (Circular Coded Target). <br>
 
-Requirements: <br>
----------------- <br>
+Requirements: 
+---------------- 
+
 <1> python 3.7 (I don't know whether other python version would work correctly, you can have a try.) <br>
 <2> opencv-python <br>
 <3> pillow <br>
@@ -24,6 +26,7 @@ The main function is listed as following:
 2. Detect and decode CCT: CCTDecodeRelease.py <br>
    which can decode CCT from the signal image, or you can use it to decode the CCT images in the same folder. <br>
    usage: <br>  
+   '" python
    <1> cd root_path <br>   
    <2> python CCTDecodeRelease.py --filename=cct12_6.png <br>
                                   --bit_n=12 <br>                                       
@@ -32,7 +35,7 @@ The main function is listed as following:
                                   --bit_n=8 <br>                              
                                   --save_folder=./result/ <br>                                      
                                   --threshold=0.93   #for images in same folder <br>
-                                        
+     '"                                   
 ![Image text](https://github.com/poxiao2/image-store/blob/master/cct12.jpg)
 
 (Actually, there are some args are default value which can be ignored if you follow my data construction. The whole args are listed as follows: <br>
