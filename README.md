@@ -1,7 +1,9 @@
-# CCTDecode
+CCTDecode
+===============
  Detect and decode the CCT (Circular Coded Target).
 
-# Requirements:
+Requirements:
+----------------
 
 <1> python 3.7 (I don't know whether other python version would work correctly, you can have a try.)
 
@@ -17,7 +19,8 @@
 
 <7> ... (maybe others, you can follow the error infomation to 'pip install xxx' them.)
  
-# The main function is listed as following:
+The main function is listed as following:
+-----------------------------------------
 
 1. Draw CCT images: DrawCCT.py
 
