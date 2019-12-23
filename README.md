@@ -32,21 +32,23 @@ The main function is listed as following:
    <1> cd root_path <br>   
    <2> python CCTDecodeRelease.py --filename=cct12_6.png 
                                   --bit_n=12                                        
-                                  --threshold=0.7   #for single image                                        
+                                  --threshold=0.7   //for single image                                        
        python CCTDecodeRelease.py --bach=True 
                                   --bit_n=8                              
                                   --save_folder=./result/                                    
-                                  --threshold=0.93   #for images in same folder 
+                                  --threshold=0.93   //for images in same folder 
      ```                                   
 ![Image text](https://github.com/poxiao2/image-store/blob/master/cct12.jpg)
 
 (Actually, there are some args are default value which can be ignored if you follow my data construction. The whole args are listed as follows: <br>
-   bach=False, # bach processing <br>
-   bit_n=12,   # the bit number of CCT image <br>
-   filename=None,  # image name <br>
-   save_folder='./result/',  # the folder for saving the processed images <br>
-   src_folder='./data/',  # the folder which contains the source images <br>
-   threshold=0.8   # the threshold for CCT detecion, which is between 0 and 1. <br>
+``` c
+   bach=False, // bach processing 
+   bit_n=12,   // the bit number of CCT image 
+   filename=None,  // image name 
+   save_folder='./result/',  // the folder for saving the processed images 
+   src_folder='./data/',  // the folder which contains the source images 
+   threshold=0.8   // the threshold for CCT detecion, which is between 0 and 1. 
+```
 So, you can change this args as you whish. But remember to write it correctly.) <br>
 
 3. Decode CCT from video: DecodeCCTFromVideo.py <br>
