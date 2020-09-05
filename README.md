@@ -58,6 +58,6 @@ So, you can change these args as you whish. But remember to write it correctly a
    usage: <br>
    ``` c
    <1> cd root_path 
-   <2> python DetectCCTFromVideo.py --bit_n=12 --threshold=0.7     
+   <2> python DetectCCTFromVideo.py --bit_n=12 --threshold=0.7 --color=white
    ```                                 
 ![Image text](https://github.com/poxiao2/image-store/blob/master/CCT/CCT.gif)
